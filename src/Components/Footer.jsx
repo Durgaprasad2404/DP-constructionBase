@@ -85,7 +85,12 @@ function Footer() {
               autoComplete="name"
               placeholder="Let me know you name"
             />
-            <button type="submit" name="submit" value="submit">
+            <button
+              type="submit"
+              name="submit"
+              value="submit"
+              className="border p-1 my-1"
+            >
               contact
             </button>
           </form>
@@ -110,7 +115,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="copyright">2024 @copyright</div>
+      <div className="copyright">2024 | GSR MEDIA @copyright</div>
     </>
   );
 }

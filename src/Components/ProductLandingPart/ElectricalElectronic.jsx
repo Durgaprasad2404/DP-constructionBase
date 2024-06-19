@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Eepro.css";
 import { LandingpageProducts } from "../../itemsData/productsData";
 import EeBg from "../../Assets/building-construction-EE-goods.png";
+import { Slide } from "react-awesome-reveal";
 function ElectricalElectronic() {
   return (
     <>
@@ -11,22 +12,26 @@ function ElectricalElectronic() {
           Building Construction Electrical & Electronic Goods
         </h2>
         <div className="building-construction-EE-materials-bgcontainer">
-          <div
-            style={{
-              backgroundImage: `url("${EeBg}")`,
-            }}
-            className="building-construction-EE-materials "
-          >
-            <p className="building-construction-EE-para">
-              Electrical equipment includes a wide-ranging field of devices. It
-              would be impossible to include information on all items of
-              equipment, and this chapter will therefore be limited to coverage
-              of products of some of the major industries
-            </p>
-            <Link to="/Electrical_Electronic_Items">
-              <button className="building-construction-EE-btn">View All</button>
-            </Link>
-          </div>
+          <Slide direction="left" triggerOnce>
+            <div
+              style={{
+                backgroundImage: `url("${EeBg}")`,
+              }}
+              className="building-construction-EE-materials "
+            >
+              <p className="building-construction-EE-para">
+                Electrical equipment includes a wide-ranging field of devices.
+                It would be impossible to include information on all items of
+                equipment, and this chapter will therefore be limited to
+                coverage of products of some of the major industries
+              </p>
+              <Link to="/Electrical_Electronic_Items">
+                <button className="building-construction-EE-btn">
+                  View All
+                </button>
+              </Link>
+            </div>
+          </Slide>
           <div className="building-construction-EE-products-container">
             {LandingpageProducts.map((i) => {
               if (i.GROUP === "Electrical_Electronic_Items") {

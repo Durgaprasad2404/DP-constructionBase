@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import Serviceslanding from "./serviceFolder/Serviceslanding";
 import { mostDemanded, services } from "../itemsData/services";
@@ -130,7 +129,6 @@ function Services() {
           {/* this component goes to service folder(Serviceslanding) */}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

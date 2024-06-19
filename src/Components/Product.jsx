@@ -5,7 +5,6 @@ import BuildingConstruction from "./ProductLandingPart/BuildingConstruction";
 import BestDeal from "./ProductLandingPart/BestDeal";
 import Productnavbar from "./ProductLandingPart/Productnavbar";
 import ElectricalElectronic from "./ProductLandingPart/ElectricalElectronic";
-import Footer from "./Footer";
 // import TopPick from "./ProductLandingPart/TopPick";
 import EquipmentLand from "./ProductLandingPart/EquipmentLand";
 import productImg1 from "../Assets/most2.png";
@@ -117,7 +116,6 @@ function Products() {
         {/* <TopPick /> */}
         <EquipmentLand />
       </div>
-      <Footer />
     </>
   );
 }

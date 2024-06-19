@@ -1,7 +1,6 @@
 import React from "react";
 import { vehicles } from "../itemsData/rented";
 import DisplayVehicles from "./rentalFolder/DisplayVehicles";
-import Footer from "./Footer";
 import SaleVehicles from "./SaleVehicles";
 
 function RentedVehicles() {
@@ -26,7 +25,6 @@ function RentedVehicles() {
         </div>
         <SaleVehicles />
       </div>
-      <Footer />
     </>
   );
 }

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./product.css";
 import { pro } from "../../itemsData/productsData";
-import Footer from "../Footer";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { BiMailSend } from "react-icons/bi";
 import { RiContactsBook3Line } from "react-icons/ri";
@@ -88,7 +87,6 @@ function SingleProduct(props) {
           );
         })}
       </div>
-      <Footer />
     </>
   );
 }

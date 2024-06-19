@@ -22,6 +22,7 @@ import SingleProduct from "./Components/productsDisplay/singleproduct";
 import SaleVehicles from "./Components/SaleVehicles";
 import Seller from "./Components/Sellers/Seller";
 import Listedservices from "./Components/serviceFolder/Listedservices";
+import Footer from "./Components/Footer";
 
 function App() {
   const scrollTop = () => {
@@ -64,6 +65,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/logout" element={<Logout />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

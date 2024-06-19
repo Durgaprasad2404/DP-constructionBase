@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
 import Carousel from "react-bootstrap/Carousel";
@@ -15,6 +14,7 @@ import homeCaro1 from "../Assets/bgs/Caro1.jpg";
 import homeCaro2 from "../Assets/bgs/Caro2.jpg";
 import homeCaro3 from "../Assets/bgs/Caro3.jpg";
 import constructionEquipmentImg from "../Assets/EquipmentLand.png";
+import ContactUs from "./contactus/ContactUs";
 function Home() {
   return (
     <>
@@ -295,17 +295,20 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="promot">
-        <h1>
-          Buy Building & Construction Materials Online in{" "}
-          <span className="nalgonda">Nalgonda</span>
-        </h1>
-        <p>
-          We supply complete building and construction materials like Cement,
-          TMT Steel, Bricks & Blocks, Sand, Tiles, Electrical Materials,
-          Plywood, Plumbing Materials, etc. at wholesale prices across nalgonda.{" "}
-        </p>
-      </div>
+      <Slide direction="up" triggerOnce>
+        <div className="promot">
+          <h1>
+            Buy Building & Construction Materials Online in{" "}
+            <span className="nalgonda">Nalgonda</span>
+          </h1>
+          <p>
+            We supply complete building and construction materials like Cement,
+            TMT Steel, Bricks & Blocks, Sand, Tiles, Electrical Materials,
+            Plywood, Plumbing Materials, etc. at wholesale prices across
+            nalgonda.{" "}
+          </p>
+        </div>
+      </Slide>
       {/* <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15254.691156704232!2d79.24744082672204!3d17.088650750495194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb293a8ff6284d%3A0xa5dc723f39670e3!2sIndustrial%20Area%2C%20Nalgonda%2C%20Telangana%20508001!5e0!3m2!1sen!2sin!4v1718774511690!5m2!1sen!2sin"
@@ -317,7 +320,7 @@ function Home() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div> */}
-      <Footer />
+      <ContactUs />
     </>
   );
 }

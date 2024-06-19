@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./buildingConstruction.css";
 import { LandingpageProducts } from "../../itemsData/productsData";
 import buildingBg from "../../Assets/building-construction-materials.png";
+import { Slide } from "react-awesome-reveal";
 function BuildingConstruction() {
   return (
     <>
@@ -11,24 +12,26 @@ function BuildingConstruction() {
           Building Construction Materials
         </h2>
         <div className="building-construction-materials-container">
-          <div
-            style={{
-              backgroundImage: `url("${buildingBg}")`,
-            }}
-            className="building-construction-materials"
-          >
-            <p className="building-construction-materials-para">
-              Building material is material used for construction. Many
-              naturally occurring substances, such as clay, rocks, sand, wood,
-              and even twigs and leaves, have been used to construct buildings
-              and other structures, like bridges
-            </p>
-            <Link to="/buildingItem">
-              <button className="building-construction-materials-btn">
-                View All
-              </button>
-            </Link>
-          </div>
+          <Slide direction="left" triggerOnce>
+            <div
+              style={{
+                backgroundImage: `url("${buildingBg}")`,
+              }}
+              className="building-construction-materials"
+            >
+              <p className="building-construction-materials-para">
+                Building material is material used for construction. Many
+                naturally occurring substances, such as clay, rocks, sand, wood,
+                and even twigs and leaves, have been used to construct buildings
+                and other structures, like bridges
+              </p>
+              <Link to="/buildingItem">
+                <button className="building-construction-materials-btn">
+                  View All
+                </button>
+              </Link>
+            </div>
+          </Slide>
           <div className="building-construction-materials-products">
             {LandingpageProducts.map((i) => {
               if (i.GROUP === "buildingItem") {

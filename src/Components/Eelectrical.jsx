@@ -1,6 +1,5 @@
 import React from "react";
 import { pro } from "../itemsData/productsData";
-import Footer from "./Footer";
 import Allproducts from "./productsDisplay/Allproducts";
 import Productnavbar from "./ProductLandingPart/Productnavbar";
 
@@ -32,7 +31,6 @@ function ElectronicsElectrical() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

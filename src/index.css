@@ -410,9 +410,9 @@ nav {
 /* home-page(promot) */
 
 .promot {
-  border-top: 0.5px solid #000;
+  background: #3b61de6e;
   text-align: center;
-  padding: 25px 30px;
+  padding: 50px 30px;
   margin-top: 25px;
 }
 

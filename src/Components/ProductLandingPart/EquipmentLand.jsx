@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./equipmentLand.css";
 import { LandingpageProducts } from "../../itemsData/productsData";
 import equipmentBg from "../../Assets/EquipmentLand.png";
+import { Slide } from "react-awesome-reveal";
 function EquipmentLand() {
   return (
     <>
@@ -11,22 +12,25 @@ function EquipmentLand() {
           Building Construction Equipment Materials
         </h2>
         <div className="EquipmentLand-container">
-          <div
-            style={{
-              backgroundImage: `url("${equipmentBg}")`,
-            }}
-            className="EquipmentLand"
-          >
-            <p className="EquipmentLand-para">
-              Construction equipment for building construction and construction
-              machinery used in construction projects. Construction equipment
-              refers to heavy-duty vehicles specially designed for executing
-              construction tasks, most frequently involving earthwork operations
-            </p>
-            <Link to="/EquipmentItems">
-              <button className="EquipmentLand-btn">View All</button>
-            </Link>
-          </div>
+          <Slide direction="left" triggerOnce>
+            <div
+              style={{
+                backgroundImage: `url("${equipmentBg}")`,
+              }}
+              className="EquipmentLand"
+            >
+              <p className="EquipmentLand-para">
+                Construction equipment for building construction and
+                construction machinery used in construction projects.
+                Construction equipment refers to heavy-duty vehicles specially
+                designed for executing construction tasks, most frequently
+                involving earthwork operations
+              </p>
+              <Link to="/EquipmentItems">
+                <button className="EquipmentLand-btn">View All</button>
+              </Link>
+            </div>
+          </Slide>
 
           <div className="EquipmentLand-products">
             {LandingpageProducts.map((i) => {
