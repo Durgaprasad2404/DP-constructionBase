@@ -17,7 +17,11 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: #ddd;
+    background-color: #004bad54;
+}
+
+.best-deal-product h5 {
+    color: #fff;
 }
 
 .best-deal-product img {
@@ -30,6 +34,7 @@
 
 .best-deal-offer {
     background-color: red;
+    color: #fff;
     padding: 3px 15px;
     border-radius: 10px;
     margin: 5px 10px;

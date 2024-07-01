@@ -3101,8 +3101,7 @@ export const pro = [
     ITEMNAME: "Wood Doors",
     CATEGORY: "Wood",
     DESCRIPTION: "Used for interior and exterior doors",
-    "IMG URL":
-      "https://res.cloudinary.com/dppxcekqu/image/upload/v1717414046/ProductsPics/Wood-doors-375409306-v59kd_pc3goa.avif",
+    "IMG URL": "../images/burma-teak-wood-doors.jpg",
     PRICE: "2,500",
     OLDPRICE: "2,800",
     OFFER: "11",
@@ -3161,8 +3160,7 @@ export const pro = [
     ITEMNAME: "PVC Windows",
     CATEGORY: "Windows",
     DESCRIPTION: "Used for providing natural light and ventilation",
-    "IMG URL":
-      "https://res.cloudinary.com/dppxcekqu/image/upload/v1717414062/ProductsPics/UWood_Windows_bslbq5.jpg",
+    "IMG URL": "../images/UPVC-Windows.jpeg",
     PRICE: "4,000",
     OLDPRICE: "4,400",
     OFFER: "9",

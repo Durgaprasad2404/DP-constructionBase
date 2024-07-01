@@ -16,11 +16,6 @@ code {
     monospace;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -417,7 +412,7 @@ nav {
 }
 
 .nalgonda {
-  color: #dea90b;
+  color: #f9f9f9;
   font-size: 2.5rem;
   text-decoration: underline;
   font-style: oblique;
@@ -535,7 +530,6 @@ b {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px;
 }
 
 .most-like-product {
@@ -552,7 +546,7 @@ b {
   padding: 10px;
   margin: 0 5px;
   width: 250px;
-  background-color: #ccc;
+  background-color: #004bad54;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -983,13 +977,14 @@ label {
     margin: 5px;
   }
 
+
   .most-like-product-img {
     display: none;
   }
 
   .most-like-product {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .building-construction-materials {

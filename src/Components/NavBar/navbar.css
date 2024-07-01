@@ -13,7 +13,7 @@ li {
 
 .navbar {
     margin: 0;
-    background-color: rgb(18, 18, 97);
+    background-color: #004aad;
     color: white;
     border-bottom: 1px solid red;
 
@@ -36,15 +36,16 @@ li {
 .navbar-links a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 0 2px;
+    margin: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
-    font-size: x-large;
+    font-size: 1.5rem;
+    font-weight: 600;
 
     &:hover {
-        font-weight: 600;
-        border-bottom: 2px solid rgb(232, 184, 26);
-        border-right: 2px solid rgb(232, 184, 26);
+        color: #004aad;
+        border-radius: 25px;
+        background-color: #f9f9f9;
     }
 }
 
@@ -79,10 +80,10 @@ li {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 88px;
+        top: 76px;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #004aad;
         text-align: center;
         transition: all 0.3s ease;
     }

@@ -80,7 +80,12 @@ function SingleProduct(props) {
               className="text-center ms-3 similar-product-container p-3 my-2"
             >
               <Link to={`/product/${item.ID}`}>
-                <img src={item["IMG URL"]} alt="#" className="img" />
+                <img
+                  src={item["IMG URL"]}
+                  alt="#"
+                  loading="lazy"
+                  className="img"
+                />
               </Link>
               <h5>{item.ITEMNAME}</h5>
             </div>

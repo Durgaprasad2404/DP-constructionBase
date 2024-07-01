@@ -39,7 +39,7 @@ function PrevArrow(props) {
 }
 function BestDeal() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -54,7 +54,7 @@ function BestDeal() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {

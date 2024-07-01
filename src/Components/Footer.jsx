@@ -36,7 +36,7 @@ function Footer() {
   };
   return (
     <>
-      <div className="text-center sticky-bottom">
+      <div className="text-center sticky-bottom mt-3">
         <button onClick={scrollToTop} className="back-btn">
           <i>
             <MdVerticalAlignTop />

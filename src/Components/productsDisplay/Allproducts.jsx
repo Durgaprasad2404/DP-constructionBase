@@ -8,7 +8,7 @@ function Allproducts(props) {
     <div className="item-con">
       <h5 className="itemname-heading">{props.itemname}</h5>
       <Link to={`/product/${props.id}`}>
-        <img src={props.imgUrl} alt="#img" className="img" />
+        <img src={props.imgUrl} alt="#img" loading="lazy" className="img" />
       </Link>
       <p>
         Price: &#8377;{props.price} <br />

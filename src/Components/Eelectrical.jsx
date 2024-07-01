@@ -4,6 +4,12 @@ import Allproducts from "./productsDisplay/Allproducts";
 import Productnavbar from "./ProductLandingPart/Productnavbar";
 
 function ElectronicsElectrical() {
+  const Electrical_Electronic_Items = [];
+  pro.map((i) => {
+    if (i.GROUP === "Electrical_Electronic_Items") {
+      Electrical_Electronic_Items.push(i);
+    }
+  });
   return (
     <>
       <Productnavbar />
@@ -11,23 +17,21 @@ function ElectronicsElectrical() {
         <h1 className="shopSideHeading">Electronics & Electrical</h1>
         <div style={{ margin: "10px" }} id="Cables">
           <div className="allItems">
-            {pro.map((i) => {
-              if (i.GROUP === "Electrical_Electronic_Items") {
-                return (
-                  <Allproducts
-                    id={i.ID}
-                    key={i.ID}
-                    itemname={i.ITEMNAME}
-                    imgUrl={i["IMG URL"]}
-                    price={i.PRICE}
-                    oldprice={i.OLDPRICE}
-                    offer={i.OFFER}
-                  /> //it goes to ProductDisplay folder (allproducts)
-                );
-              } else {
-                return null;
-              }
-            })}
+            {Electrical_Electronic_Items.length > 0
+              ? Electrical_Electronic_Items.map((i) => {
+                  return (
+                    <Allproducts
+                      key={i.ID}
+                      id={i.ID}
+                      itemname={i.ITEMNAME}
+                      imgUrl={i["IMG URL"]}
+                      price={i.PRICE}
+                      oldprice={i.OLDPRICE}
+                      offer={i.OFFER}
+                    />
+                  ); //it goes to ProductDisplay folder (allproducts)
+                })
+              : "No Products"}
           </div>
         </div>
       </div>

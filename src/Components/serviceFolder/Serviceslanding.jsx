@@ -17,6 +17,7 @@ function Serviceslanding(props) {
                     <img
                       src={i.imgUrl}
                       alt="#services"
+                      loading="lazy"
                       className="services-work-img"
                     />
                   </Link>
